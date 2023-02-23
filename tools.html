@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>T7 - Group Processes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+<!--
+
+TemplateMo 573 EduWell
+
+https://templatemo.com/tm-573-eduwell
+
+-->
+  </head>
+
+<body>
+
+
+
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a href="index.html" class="logo">
+                            <img src="assets/images/templatemo-eduwell.png" alt="EduWell Template">
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="team.html">Team</a></li>
+                            <li><a href="industry.html">Industry Data</a></li>
+                            <li><a href="itwork.html">IT Work</a></li>
+                            <li><a href="ittech.html">Technologies</a></li>
+                            <li><a href="project.html" class="active">Project</a></li>
+                            
+                        </ul>
+
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ***** Header Area End ***** -->
+
+  <section class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="header-text">
+              <br><br><br>
+            <h4 style="text-align: center;">input(T7)</h4>
+            <h1 style="text-align: center;">Dungeon Dice</h1>
+            <br>
+              <p style="text-align: center;"><a href="project.html" >Overview</a> | <a href="tools.html">Tools & Technology</a> | <a href="testing.html">Testing</a> | <a href="timeframe.html">Timeframe</a> | <a href="risks.html">Risks</a> | <a href="group.html">Group Processes</a> | <a href="skills.html">Skills & Jobs</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Michael -->
+
+
+  <section class="simple-cta">
+    <div class="container">
+      <div class="row">
+
+        <h4><bold>Tools & Technology</bold></h4>
+
+          <p><strong>GitHub</strong> – GitHub will be used to store and manage our code, while also keeping track of any changes that are made to the code along the way while designing the website. The team has all had experience using this program in the past some more than others, so we shouldn’t have many dramas when it comes to uploading our code. <br><br>
+              <strong>Python IDLE</strong> – Python will be the main coding language we will use while designing this project. Using IDLE will help in the process of writing our code more efficiently and provides a built-in debugger for troubleshooting any errors along the way. The teams prior experience with Python does vary, only a few of our members have experience in using this and they will be the ones that will focus on writing up the code.<br><br>
+              <strong>Atom/Sublime/Notepad++</strong> –These three are the text editor programs that we will be using to write up all our code needed for the website. All members of the team have prior experience using at least one of these three programs, but these will be used hand in hand with the coding process.
+              <strong>Microsoft PowerPoint</strong> – We will be using Microsoft PowerPoint to make our presentation on our project. The team has had prior experience in using this program, however some of the members are more capable of using it to a higher standard than others and will be best suited to construct the presentation or overview the finished product.<br><br>
+              <strong>Adobe Photoshop</strong> – Adobe Photoshop is the program we have decided to use for the graphic designs for our website. Not all the team members have prior experience using this program, with that in mind the members with experience will be handling the graphic design aspect of the project.
+
+
+</p>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/tabs.js"></script>
+    <script src="assets/js/video.js"></script>
+    <script src="assets/js/slick-slider.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+
+</body>
+</html>
